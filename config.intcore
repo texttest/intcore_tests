@@ -1,0 +1,56 @@
+##==============================================================================
+##Stuff that only works at Carmen!
+
+# Settings for Carmen
+default_checkout:master
+[checkout_location]
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
+nightly_publish:/usr/local/bin
+weekly_publish:/usr/local/bin
+[end]
+
+view_program:xemacs
+
+# For each "special batch" run, specify recipients, time limit, architectures and versions 
+# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
+[batch_recipients]
+default:carmen.testtool_tests
+local:$USER
+
+[batch_version]
+nightly_publish:master
+weekly_publish:master
+default:i386_linux
+[end]
+
+[gui_entry_overrides]
+auto-replay_in_dynamic_gui:1
+temporary_result_directory:/carm/proj/matador2/publish/coach.texttest_tmp
+version_to_reconnect_to:master.i386_linux
+[end]
+
+# GUI configuration, drop-down lists to appear in static gui...
+[gui_entry_options]
+use_checkout:/usr/local/bin
+use_checkout:/carm/master/Testing/TextTest
+[end]
+
+[batch_result_repository]
+default:/carm/proj/texttest/html/TestStateRepository
+
+[historical_report_location]
+default:/carm/proj/texttest/html/TestResults
+[end]
+
+unsaveable_version:master
+unsaveable_version:i386_linux
+
+## end of stuff only for use at Carmen
+## ================================================================
+
+# Path to the binary
+binary:${TEXTTEST_CHECKOUT}/interpretcore.py
+
+link_test_path:core
+
+collect_traffic:gdb

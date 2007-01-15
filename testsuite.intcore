@@ -1,0 +1,8 @@
+NormalInfo
+EmptyCore
+
+# Copy of EmptyCore, where binary doesn't exist
+NoBinary
+
+# GDB bails out...
+UnreadableCore

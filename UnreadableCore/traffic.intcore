@@ -1,0 +1,3 @@
+<-CMD:gdb -q -batch -x coreCommands.gdb /bin/grep core
+->ERR:"core" is not a core dump: File format not recognized
+No stack from fake GDB!
