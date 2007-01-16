@@ -1,6 +1,10 @@
 ##==============================================================================
 ##Stuff that only works at Carmen!
 
+# Run with SGE at Carmen
+config_module:carmenqueuesystem
+queue_system_module:SGE
+
 # Settings for Carmen
 default_checkout:master
 [checkout_location]
@@ -8,8 +12,6 @@ default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
 nightly_publish:/usr/local/bin
 weekly_publish:/usr/local/bin
 [end]
-
-view_program:xemacs
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
 # Not present means $USER as recipient, no time limit, all versions and all architectures accepted
