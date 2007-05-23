@@ -8,9 +8,8 @@ queue_system_module:SGE
 # Settings for Carmen
 default_checkout:master
 [checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest
-nightly_publish:/usr/local/bin
-weekly_publish:/usr/local/bin
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/bin
+nightjob:/usr/local/bin
 [end]
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
