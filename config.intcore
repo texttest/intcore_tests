@@ -51,6 +51,7 @@ unsaveable_version:i386_linux
 # Path to the binary
 binary:${TEXTTEST_CHECKOUT}/interpretcore.py
 
-link_test_path:core
+# Don't call them "core", or they get cleaned by IT/IS!
+link_test_path:fakecore
 
 collect_traffic:gdb
