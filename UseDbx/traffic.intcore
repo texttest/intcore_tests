@@ -1,4 +1,4 @@
-<-CMD:gdb -q -batch -x /tmp/tmpiZPnDpcoreCommands.gdb /bin/grep fakecore
+<-CMD:gdb -q -batch -x /tmp/354774.1.short/tmpBei1PVcoreCommands.gdb /bin/grep fakecore
 ->OUT:(no debugging symbols found)...#0  0x0000000000000000 in ?? ()
 #0  0x0000000000000000 in ?? ()
 ->ERR:
@@ -29,7 +29,7 @@ warning: Couldn't find general-purpose registers in core file.
 
 
 warning: Wrong size fpregset in core file.
-<-CMD:dbx -q -c "where; quit" /bin/grep fakecore
+<-CMD:dbx -f -q -c "where; quit" /bin/grep fakecore
 ->OUT:core file header read successfully
 t@2 (l@2) program terminated by signal SEGV (Segmentation Fault)
 0xffffffff7e1ce4a0: __pollsys+0x0008:	blu      _cerror	! 0xffffffff7e12cdc4

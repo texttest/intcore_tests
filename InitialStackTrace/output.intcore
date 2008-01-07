@@ -13,7 +13,7 @@ warning: Couldn't find general-purpose registers in core file.
 
 
 warning: Wrong size fpregset in core file.
-GDB backtrace command failed : Stack trace not produced for crash
+DBX backtrace command failed : Stack trace not produced for crash
 Errors from DBX:
 File format not recognised
 

@@ -4,7 +4,7 @@ GDB backtrace command failed : Stack trace not produced for crash
 Errors from GDB:
 "core" is not a core dump: File format not recognized
 No stack from fake GDB!
-GDB backtrace command failed : Stack trace not produced for crash
+DBX backtrace command failed : Stack trace not produced for crash
 Errors from DBX:
 dbx: fakecore has unsupported architecture or file format
 dbx: program is not active
