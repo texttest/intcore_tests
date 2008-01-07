@@ -1,7 +1,7 @@
 Segmentation fault in ___newselect_nocancel
 -------------------------------------------
 Program terminated with signal 11, Segmentation fault.
-Stack trace from gdb :
+Stack trace from GDB :
 ___newselect_nocancel 
 inittime_the_fake_version 
 ?? 

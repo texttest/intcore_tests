@@ -1,4 +1,7 @@
 NormalInfo
+
+# Fall back on calling dbx if gdb bails out
+UseDbx
 EmptyCore
 
 # Copy of EmptyCore, where binary doesn't exist

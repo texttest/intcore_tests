@@ -55,6 +55,7 @@ binary:${TEXTTEST_CHECKOUT}/interpretcore.py
 link_test_path:fakecore
 
 collect_traffic:gdb
+collect_traffic:dbx
 
 [run_dependent_text]
 traffic:[^ ]*(coreCommands.gdb){REPLACE <tmp_path>/\1}
