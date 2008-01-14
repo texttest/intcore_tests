@@ -1,5 +1,7 @@
 Segmentation Fault in __pollsys
 -------------------------------
+(Core file at fakecore)
+(Created by binary /bin/grep)
 t@2 (l@2) program terminated by signal SEGV (Segmentation Fault)
 Stack trace from DBX :
 __pollsys
