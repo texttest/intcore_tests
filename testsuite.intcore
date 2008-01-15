@@ -2,6 +2,9 @@ NormalInfo
 
 # Fall back on calling dbx if gdb bails out
 UseDbx
+
+# Check that we keep the intermittent debugging info
+DebuggingInfo
 EmptyCore
 
 # Copy of EmptyCore, where binary doesn't exist
