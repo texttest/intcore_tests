@@ -5,6 +5,8 @@
 config_module:carmenqueuesystem
 queue_system_module:SGE
 
+default_major_release:none
+
 # Settings for Carmen
 default_checkout:master
 [checkout_location]
