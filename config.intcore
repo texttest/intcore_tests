@@ -11,7 +11,7 @@ default_major_release:none
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/bin
-nightjob:/usr/local/bin
+nightjob:/usr/local/share/texttest/bin
 [end]
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
