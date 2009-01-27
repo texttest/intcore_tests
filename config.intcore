@@ -10,8 +10,8 @@ default_major_release:none
 # Settings for Carmen
 default_checkout:master
 [checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/bin
-nightjob:/usr/local/share/texttest/bin
+default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/libexec
+nightjob:/carm/proj/texttest/release/current/libexec
 [end]
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
