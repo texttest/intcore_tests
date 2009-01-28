@@ -3,7 +3,6 @@
 
 # Run with SGE at Carmen
 config_module:carmenqueuesystem
-queue_system_module:SGE
 
 default_major_release:none
 
@@ -11,7 +10,14 @@ default_major_release:none
 default_checkout:master
 [checkout_location]
 default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/libexec
-nightjob:/carm/proj/texttest/release/current/libexec
+tt_nightjob:/carm/proj/texttest/release/current/libexec
+[end]
+
+batch_use_version_filtering:true
+
+[batch_version]
+default:unix
+default:linux_std
 [end]
 
 # For each "special batch" run, specify recipients, time limit, architectures and versions 
@@ -19,11 +25,6 @@ nightjob:/carm/proj/texttest/release/current/libexec
 [batch_recipients]
 default:carmen.testtool_tests
 local:$USER
-
-[batch_version]
-default:unix
-default:linux_std
-[end]
 
 [gui_entry_overrides]
 auto-replay_in_dynamic_gui:1
