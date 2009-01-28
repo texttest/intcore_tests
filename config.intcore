@@ -44,6 +44,10 @@ default:/carm/proj/texttest/html/TestStateRepository
 default:/carm/proj/texttest/html/TestResults
 [end]
 
+[historical_report_all_page]
+default:false
+[end]
+
 unsaveable_version:unix
 unsaveable_version:linux_std
 
