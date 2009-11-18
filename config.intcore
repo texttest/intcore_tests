@@ -1,58 +1,12 @@
-##==============================================================================
-##Stuff that only works at Carmen!
+executable:${TEXTTEST_CHECKOUT}/interpretcore.py
 
-# Run with SGE at Carmen
-config_module:carmenqueuesystem
+full_name:interpretcore.py
 
-default_major_release:none
+# Mechanism for keeping site-specific setup separate
+extra_search_directory:site
+extra_search_directory:default_site
 
-# Settings for Carmen
-default_checkout:master
-[checkout_location]
-default:~/work/${TEXTTEST_CHECKOUT_NAME}/Testing/TextTest/libexec
-tt_nightjob:/carm/proj/texttest/release/current/libexec
-[end]
-
-batch_use_version_filtering:true
-
-[batch_version]
-default:unix
-default:linux_std
-[end]
-
-# For each "special batch" run, specify recipients, time limit, architectures and versions 
-# Not present means $USER as recipient, no time limit, all versions and all architectures accepted
-[batch_recipients]
-default:carmen.testtool_tests
-local:$USER
-
-[gui_entry_overrides]
-auto-replay_in_dynamic_gui:1
-temporary_result_directory:/carm/proj/matador2/publish/coach.texttest_tmp
-version_to_reconnect_to:unix.linux_std
-[end]
-
-# GUI configuration, drop-down lists to appear in static gui...
-[gui_entry_options]
-use_checkout:/usr/local/bin
-use_checkout:/carm/master/Testing/TextTest
-[end]
-
-[batch_result_repository]
-default:/carm/proj/texttest/html/TestStateRepository
-
-[historical_report_location]
-default:/carm/proj/texttest/html/TestResults
-[end]
-
-unsaveable_version:unix
-unsaveable_version:linux_std
-
-## end of stuff only for use at Carmen
-## ================================================================
-
-# Path to the binary
-binary:${TEXTTEST_CHECKOUT}/interpretcore.py
+import_config_file:site_configfile
 
 # Don't call them "core", or they get cleaned by IT/IS!
 link_test_path:fakecore
